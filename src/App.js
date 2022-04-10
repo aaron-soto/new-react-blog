@@ -6,11 +6,13 @@ import { Home } from 'pages/home/Home';
 import { Projects } from 'pages/projects/Projects';
 import { Footer } from 'components/footer/Footer';
 import { NotFound } from 'pages/error/NotFound';
+import { ScrollBar } from 'utils/components/ScrollBar';
 
 function App() {
 	return (
 		<div className='App'>
 			<Navbar />
+			<ScrollBar />
 			<Routes>
 				<Route path='*' element={<NotFound />} />
 				<Route path='/' element={<Home />} />

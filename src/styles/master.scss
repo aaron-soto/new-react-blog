@@ -349,3 +349,21 @@ h2 {
 		justify-content: center;
 	}
 }
+
+body::-webkit-scrollbar {
+	display: none;
+}
+body {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar {
+	@include theme-aware('background-color', 'color-purple-base');
+	@include bounce-transition(0.2);
+	width: 7px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}

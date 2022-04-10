@@ -38,9 +38,9 @@ export const About = () => {
 			</div>
 
 			<div className='container'>
-				<Link className='header-link' to='/about#what-im-doing'>
+				<Link className='header-link' to='/about#my-resume'>
 					<RiLinksLine className='icon' />
-					<h2 id='what-im-doing'>My Resume</h2>
+					<h2 id='my-resume'>My Resume</h2>
 				</Link>
 
 				<p>
@@ -53,9 +53,9 @@ export const About = () => {
 			</div>
 
 			<div className='container'>
-				<Link className='header-link' to='/about#what-im-doing'>
+				<Link className='header-link' to='/about#spotify-top'>
 					<RiLinksLine className='icon' />
-					<h2 id='what-im-doing'>My Top Spotify Songs</h2>
+					<h2 id='spotify-top'>My Top Spotify Songs</h2>
 				</Link>
 
 				<p>
