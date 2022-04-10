@@ -46,11 +46,11 @@ p {
 
 a {
 	@include bounce-transition(0.3);
-	@include theme-aware('color', 'color-blue-base');
+	@include theme-aware('color', 'color-purple-base');
 	text-decoration: none;
 
 	&:hover {
-		@include theme-aware('color', 'color-blue-20');
+		@include theme-aware('color', 'color-purple-20');
 	}
 }
 
@@ -72,7 +72,7 @@ h2 {
 .btn-primary {
 	// @include theme-aware('color', 'color-background-primary');
 	color: $color-white !important;
-	@include theme-aware('background-color', 'color-blue-20');
+	@include theme-aware('background-color', 'color-purple-base');
 	display: inline-block;
 	padding: 12px 35px;
 	transition: all 0.2s ease-in-out;
@@ -81,7 +81,7 @@ h2 {
 
 	&:hover {
 		@include theme-aware('color', 'color-background');
-		@include theme-aware('background-color', 'color-blue-40');
+		@include theme-aware('background-color', 'color-purple-40');
 	}
 }
 
@@ -95,11 +95,11 @@ h2 {
 	margin-top: 80px;
 
 	span {
-		@include theme-aware('color', 'color-orange-base');
+		@include theme-aware('color', 'color-purple-base');
 	}
 
 	a {
-		@include theme-aware('border-color', 'color-orange-base');
+		@include theme-aware('border-color', 'color-purple-base');
 		@include theme-aware('color', 'color-grayscale-200');
 		border-bottom: 2px solid;
 		font-size: 16px;
@@ -169,7 +169,7 @@ h2 {
 		top: 50%;
 		padding: 0;
 		line-height: 2rem;
-		@include theme-aware('color', 'color-orange-base');
+		@include theme-aware('color', 'color-purple-base');
 		font-size: 2rem;
 		font-weight: 500;
 	}
@@ -206,7 +206,7 @@ h2 {
 
 		&:before {
 			content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-			@include theme-aware('color', 'color-orange-base'); /* Change the color */
+			@include theme-aware('color', 'color-purple-base'); /* Change the color */
 			font-weight: 800; /* If you want it to be bold */
 			display: inline-block; /* Needed to add space between the bullet and the text */
 			width: 1em; /* Also needed for space (tweak if needed) */

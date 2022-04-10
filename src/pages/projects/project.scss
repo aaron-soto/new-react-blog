@@ -16,7 +16,7 @@
 		align-items: center;
 
 		h2 {
-			@include theme-aware('color', 'color-orange-20');
+			@include theme-aware('color', 'color-purple-base');
 		}
 
 		span {
@@ -30,10 +30,10 @@
 				padding: 0.2rem 0.9rem;
 				margin: 0.2rem;
 				font-size: 16px;
+				font-weight: 600;
 
 				&:hover {
-					@include theme-aware('border-color', 'color-orange-base');
-					@include theme-aware('color', 'color-orange-base');
+					@include theme-aware('color', 'color-purple-base');
 				}
 			}
 		}
