@@ -1,0 +1,102 @@
+@import './variables';
+
+$themes: (
+	light: (
+		// New Colors =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		color-background-primary: $color-white,
+		color-background-secondary: $color-white-second,
+		// Titles and bold text
+		color-grayscale-100: #1c1c1c,
+		// Body texts
+		color-grayscale-200: #585757,
+		// small text and fill icons
+		color-grayscale-300: #969696,
+		// small details (i.e. borders, dividers)
+		color-grayscale-400: #e8e8e8,
+
+		// Blues
+		color-blue-base: $color-blue-lbase,
+		color-blue-20: $color-blue-l20,
+		color-blue-40: $color-blue-l40,
+		color-blue-60: $color-blue-l60,
+
+		// Greens
+		color-green-base: $color-green-lbase,
+		color-green-20: $color-green-l20,
+		color-green-40: $color-green-l40,
+		color-green-60: $color-green-l60,
+
+		// Oranges
+		color-orange-base: $color-orange-lbase,
+		color-orange-20: $color-orange-l20,
+		color-orange-40: $color-orange-l40,
+		color-orange-60: $color-orange-l60,
+
+		// Reds
+		color-red-base: $color-red-lbase,
+		color-red-20: $color-red-l20,
+		color-red-40: $color-red-l40,
+		color-red-60: $color-red-l60,
+
+		// Yellows
+		color-yellow-base: $color-yellow-lbase,
+		color-yellow-20: $color-yellow-l20,
+		color-yellow-40: $color-yellow-l40,
+		color-yellow-60: $color-yellow-l60,
+
+		// Purples
+		color-purple-base: $color-purple-lbase,
+		color-purple-20: $color-purple-l20,
+		color-purple-40: $color-purple-l40,
+		color-purple-60: $color-purple-l60,
+	),
+	dark: (
+		// New Colors =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+		color-background-primary: $color-black,
+		color-background-secondary: $color-black-second,
+		// Titles and bold text
+		color-grayscale-100: #e7e7e7,
+		// Body texts
+		color-grayscale-200: #b8b8b8,
+		// small text and fill icons
+		color-grayscale-300: #707070,
+		// small details (i.e. borders, dividers)
+		color-grayscale-400: #292929,
+
+		// Blues
+		color-blue-base: $color-blue-dbase,
+		color-blue-20: $color-blue-d20,
+		color-blue-40: $color-blue-d40,
+		color-blue-60: $color-blue-d60,
+
+		// Greens
+		color-green-base: $color-green-dbase,
+		color-green-20: $color-green-d20,
+		color-green-40: $color-green-d40,
+		color-green-60: $color-green-d60,
+
+		// Oranges
+		color-orange-base: $color-orange-dbase,
+		color-orange-20: $color-orange-d20,
+		color-orange-40: $color-orange-d40,
+		color-orange-60: $color-orange-d60,
+
+		// Reds
+		color-red-base: $color-red-dbase,
+		color-red-20: $color-red-d20,
+		color-red-40: $color-red-d40,
+		color-red-60: $color-red-d60,
+
+		// Yellows
+		color-yellow-base: $color-yellow-dbase,
+		color-yellow-20: $color-yellow-d20,
+		color-yellow-40: $color-yellow-d40,
+		color-yellow-60: $color-yellow-d60,
+
+		// Purples
+		color-purple-base: $color-purple-dbase,
+		color-purple-20: $color-purple-d20,
+		color-purple-40: $color-purple-d40,
+		color-purple-60: $color-purple-d60,
+	),
+);

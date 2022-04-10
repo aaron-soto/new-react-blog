@@ -1,0 +1,23 @@
+@import './color-palette';
+
+/**
+ * theme-aware - Change color of a css property based on the currently active theme
+ *
+ * @param  {key}     CSS property
+ * @param  {color}   Color name defined in the themes under _color-palette.scss
+ *
+ * @example - @include theme-aware('background', 'color-background');
+ * @returns - background: #FFF;
+ */
+@mixin theme-aware($key, $color) {
+	@each $theme-name, $theme-color in $themes {
+		.theme-#{$theme-name} & {
+			#{$key}: map-get(map-get($themes, $theme-name), $color);
+		}
+	}
+}
+
+@mixin bounce-transition($duration) {
+	// transition: all 0.6s ease-in-out;
+	transition: all #{$duration}s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

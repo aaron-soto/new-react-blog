@@ -1,0 +1,33 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+.footer {
+	@include theme-aware('border-color', 'color-grayscale-400');
+	border-top: 1px solid;
+	margin-top: 80px;
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 3rem;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			margin-bottom: 2rem;
+
+			li {
+				a {
+					@include theme-aware('color', 'color-grayscale-100');
+					padding: 10px 17px;
+				}
+			}
+		}
+
+		span {
+			@include theme-aware('color', 'color-grayscale-300');
+			font-size: 14px;
+		}
+	}
+}
