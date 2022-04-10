@@ -161,9 +161,6 @@ h2 {
 	position: relative;
 	// height: 2rem;
 	min-height: 2rem;
-	@include for-phone-only {
-		margin-bottom: 4rem;
-	}
 
 	h2 {
 		@include bounce-transition(0.3);
