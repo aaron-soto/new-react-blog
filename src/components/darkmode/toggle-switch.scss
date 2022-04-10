@@ -1,5 +1,5 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@import 'styles/variables';
+@import 'styles/mixins';
 
 .toggle-switch {
 	position: relative;
@@ -12,7 +12,7 @@
 	display: none;
 }
 .toggle-switch .switch {
-	@include theme-aware('background-color', 'color-grayscale-100');
+	@include theme-aware('background-color', 'color-grayscale-300');
 	position: absolute;
 	cursor: pointer;
 	border-radius: 25px;
@@ -38,7 +38,7 @@
 	transform: translateX(27px);
 }
 .toggle-switch input[type='checkbox']:checked + .switch {
-	@include theme-aware('background-color', 'color-text');
+	@include theme-aware('background-color', 'color-grayscale-300');
 }
 
 .toggle-wrapper {

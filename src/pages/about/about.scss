@@ -1,0 +1,18 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.me-img {
+	background-image: url('../../assets/me.jpg');
+	max-height: 400px;
+	height: 400px;
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+	background-size: 200% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	@include for-phone-only {
+		width: 100%;
+	}
+}

@@ -3,6 +3,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { RiLinksLine } from 'react-icons/ri';
 
 import { TopTracks } from 'components/spotify/TopTracks';
+import ImgME from 'assets/me.jpg';
+
+import './about.scss';
 
 export const About = () => {
 	return (
@@ -14,6 +17,10 @@ export const About = () => {
 						Software engineer, open-sourcerer, carpenter, adrenaline junkie.
 					</p>
 				</div>
+			</div>
+
+			<div className='container'>
+				<div className='me-img' src={ImgME}></div>
 			</div>
 
 			<div className='container content'>
