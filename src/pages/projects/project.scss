@@ -9,14 +9,11 @@
 	margin-top: 60px;
 
 	.project {
-		@include theme-aware('background', 'color-grayscale-400');
-		@include theme-aware('border-color', 'color-grayscale-300');
-		border: 1px solid;
+		@include theme-aware('background', 'color-background-secondary');
 		padding: 1.5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border-radius: 10px;
 
 		h2 {
 			@include theme-aware('color', 'color-orange-20');
@@ -29,12 +26,10 @@
 		.links {
 			a {
 				@include theme-aware('background', 'color-background-primary');
-				@include theme-aware('border-color', 'color-grayscale-300');
 				@include theme-aware('color', 'color-grayscale-200');
-				border: 1px solid;
-				padding: 0.15rem 0.6rem;
+				padding: 0.2rem 0.9rem;
 				margin: 0.2rem;
-				border-radius: 5px;
+				font-size: 16px;
 
 				&:hover {
 					@include theme-aware('border-color', 'color-orange-base');

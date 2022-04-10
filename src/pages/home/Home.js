@@ -35,7 +35,7 @@ export const Home = () => {
 			<h2 className='main-header'>
 				<span>Newsletter</span>
 			</h2>
-			<div className='row'>
+			<div className='row newsletter'>
 				<p>
 					Subscribe to the newsletter to get my latest content by email. Not on
 					any set schedule. Unsubscribe anytime.

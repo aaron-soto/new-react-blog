@@ -39,7 +39,6 @@
 }
 .toggle-switch input[type='checkbox']:checked + .switch {
 	@include theme-aware('background-color', 'color-text');
-	background-color: #336699;
 }
 
 .toggle-wrapper {
