@@ -121,18 +121,11 @@ export const About = () => {
 				</Link>
 
 				<ul className='simple-list'>
-					<li>I built my first website in 1998 on GeoCities</li>
-					<li>
-						Two of my favorite book series are The Expanse and A Song of Ice and
-						Fire
-					</li>
-					<li>I own at least one accordion</li>
-					<li>
-						I once hopped on a one-way flight to Scotland and traveled Europe
-						for several months
-					</li>
 					<li>I served in the Army as a Sgt for Ranger Regiment.</li>
-					<li>My best trivia category is 80's music</li>
+					<li>I have jumped out of an airplane more times than I can count.</li>
+					<li>I recently started a bodybuilding journey</li>
+					<li>I have visited over 30 different countries</li>
+					<li>My best trivia category is anything movies</li>
 				</ul>
 			</div>
 		</>
