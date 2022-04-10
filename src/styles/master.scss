@@ -12,6 +12,11 @@ body {
 	@include theme-aware('color', 'color-grayscale-200');
 	@include bounce-transition(0.3);
 	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+
+	@include for-phone-only {
+		font-size: 16px !important;
+	}
 }
 
 .container {
@@ -28,10 +33,13 @@ body {
 			margin-bottom: 2rem;
 		}
 	}
+
+	@include for-phone-only {
+		padding: 0 1rem;
+	}
 }
 
 p {
-	font-size: 18px;
 	line-height: 1.7rem;
 	margin-bottom: 20px;
 }
@@ -116,6 +124,12 @@ h2 {
 		font-size: 1.2rem;
 		text-align: center;
 	}
+
+	@include for-phone-only {
+		h1 {
+			font-size: 2rem;
+		}
+	}
 }
 
 .main-list-item {
@@ -141,7 +155,11 @@ h2 {
 .header-link {
 	display: block;
 	position: relative;
-	height: 2rem;
+	// height: 2rem;
+	min-height: 2rem;
+	@include for-phone-only {
+		margin-bottom: 4rem;
+	}
 
 	h2 {
 		@include bounce-transition(0.3);

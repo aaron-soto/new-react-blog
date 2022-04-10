@@ -8,13 +8,11 @@ export const About = () => {
 	return (
 		<>
 			<div className='container'>
-				<div className='container'>
-					<div className='page-header'>
-						<h1>About Me</h1>
-						<p className='description'>
-							Software engineer, open-sourcerer, carpenter, adrenaline junkie.
-						</p>
-					</div>
+				<div className='page-header'>
+					<h1>About Me</h1>
+					<p className='description'>
+						Software engineer, open-sourcerer, carpenter, adrenaline junkie.
+					</p>
 				</div>
 			</div>
 
