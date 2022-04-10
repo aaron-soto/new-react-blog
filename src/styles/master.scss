@@ -138,6 +138,10 @@ h2 {
 	padding: 0.5rem 0.8rem;
 	border-radius: 5px;
 
+	@include for-phone-only {
+		padding: 0.5rem 0;
+	}
+
 	&:hover {
 		@include theme-aware('background', 'color-grayscale-400');
 	}
