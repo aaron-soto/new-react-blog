@@ -3,7 +3,7 @@ export const projects = [
 		title: 'React Flip Clock Time Tracker',
 		date: 'Apr 2022',
 		source: 'https://github.com/aaron-soto/react-clock',
-		demo: 'https://taniarascia.github.io/primitive/#getting-started',
+		demo: 'https://aaron-soto.github.io/react-clock/',
 		description: 'A flip style clock to display and keep track of time.',
 	},
 	{
