@@ -21,6 +21,10 @@ body {
 	@include hideScrollbar();
 }
 
+::-webkit-scrollbar-thumb {
+	display: none;
+}
+
 .container {
 	max-width: 680px;
 	width: 100%;
