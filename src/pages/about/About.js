@@ -2,12 +2,17 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import { RiLinksLine } from 'react-icons/ri';
 
+import { useAnalyticsEventTracker } from 'utils/analytics/useAnalyticsEventTracker';
 import { TopTracks } from 'components/spotify/TopTracks';
 import ImgME from 'assets/me.jpg';
 
 import './about.scss';
 
 export const About = () => {
+	const gaEventTracker = useAnalyticsEventTracker('About Page');
+	const handleResumeDownload = () => {
+		gaEventTracker('resume-download');
+	};
 	return (
 		<>
 			<div className='container'>
@@ -45,9 +50,11 @@ export const About = () => {
 
 				<p>
 					Checkout my resume{' '}
-					<a href='https://docs.google.com/document/d/1V5IDPwpYZEsDaibjKotqvt-TdKVZSIuCjFCJJLvIoBo/edit?usp=sharing'>
-						here
-					</a>
+					<span onClick={handleResumeDownload}>
+						<a href='https://docs.google.com/document/d/1V5IDPwpYZEsDaibjKotqvt-TdKVZSIuCjFCJJLvIoBo/edit?usp=sharing'>
+							here
+						</a>
+					</span>
 					.
 				</p>
 			</div>
