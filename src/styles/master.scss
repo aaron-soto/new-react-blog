@@ -354,12 +354,14 @@ body::-webkit-scrollbar,
 html::-webkit-scrollbar {
 	display: none;
 	-webkit-overflow-scrolling: auto !important;
+	-webkit-appearance: none;
 }
 body,
 html {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 	-webkit-overflow-scrolling: auto !important;
+	-webkit-appearance: none;
 }
 
 .scrollbar {
