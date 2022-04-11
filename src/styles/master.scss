@@ -34,7 +34,7 @@ body {
 		max-width: 1350px;
 
                 @include for-phone-only {
-		        max-width: 680px;
+		        padding: 0 1rem;
 	        }
 	}
 
