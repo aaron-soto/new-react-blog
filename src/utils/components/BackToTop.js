@@ -1,6 +1,15 @@
 import { AiFillCaretUp } from 'react-icons/ai';
 import { useState } from 'react';
 
+export const scrollToTop = () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+		/* you can also use 'auto' behaviour
+	 in place of 'smooth' */
+	});
+};
+
 export const BackToTop = () => {
 	const [visible, setVisible] = useState(false);
 
@@ -11,15 +20,6 @@ export const BackToTop = () => {
 		} else if (scrolled <= 150) {
 			setVisible(false);
 		}
-	};
-
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth',
-			/* you can also use 'auto' behaviour
-         in place of 'smooth' */
-		});
 	};
 
 	window.addEventListener('scroll', toggleVisible);

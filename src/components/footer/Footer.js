@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Link } from 'react-router-dom';
+import { scrollToTop } from 'utils/components/BackToTop';
 import './footer.scss';
 
 const moment = require('moment'); // require
@@ -22,16 +23,16 @@ export const Footer = () => {
 		<div className='footer'>
 			<div className='container'>
 				<ul>
-					<li>
+					<li onClick={scrollToTop}>
 						<Link to='/'>Home</Link>
 					</li>
-					<li>
+					<li onClick={scrollToTop}>
 						<Link to='/blog'>Blog</Link>
 					</li>
-					<li>
+					<li onClick={scrollToTop}>
 						<Link to='/projects'>Projects</Link>
 					</li>
-					<li>
+					<li onClick={scrollToTop}>
 						<Link to='/about'>About</Link>
 					</li>
 				</ul>
