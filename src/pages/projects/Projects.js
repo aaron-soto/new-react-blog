@@ -24,14 +24,13 @@ export const Projects = () => {
 					return (
 						<div className='project' key={idx}>
 							<h2>{project.title}</h2>
-							<span>
-								<GiNotebook />
-							</span>
+							<img className='image' src={`images/${project.image}`}></img>
 							<div className='links'>
 								<span
 									onClick={() => gaEventTracker(`source - ${project.title}`)}
 								>
 									<a
+										className='project-link'
 										href={project.source}
 										target='_blank'
 										rel='noopener noreferrer'
@@ -41,6 +40,7 @@ export const Projects = () => {
 								</span>
 								<span onClick={() => gaEventTracker(`demo - ${project.title}`)}>
 									<a
+										className='project-link'
 										href={project.demo}
 										target='_blank'
 										rel='noopener noreferrer'

@@ -5,6 +5,7 @@ export const projects = [
 		source: 'https://github.com/aaron-soto/react-clock',
 		demo: 'https://aaron-soto.github.io/react-clock/',
 		description: 'A flip style clock to display and keep track of time.',
+		image: 'react-clock.png',
 	},
 	{
 		title: 'Ninja Gold Canvas Game',
@@ -12,6 +13,7 @@ export const projects = [
 		source: 'https://github.com/aaron-soto/NinjaGoldGame',
 		demo: 'https://aaron-soto.github.io/NinjaGoldGame/',
 		description: 'A Canvas game where player can "earn" and "gamble" coins.',
+		image: 'ninjagoldgame.png',
 	},
 	{
 		title: 'React Hangman',
@@ -19,6 +21,7 @@ export const projects = [
 		source: 'https://github.com/aaron-soto/react-hangman',
 		demo: 'https://aaron-soto.github.io/react-hangman/',
 		description: 'A react version of the classic Hangman Game',
+		image: 'react-hangman.png',
 	},
 	{
 		title: 'React Search Bar',
@@ -26,6 +29,7 @@ export const projects = [
 		source: 'https://github.com/aaron-soto/react-search',
 		demo: 'https://aaron-soto.github.io/react-search/',
 		description: 'A React search bar with real time filters.',
+		image: 'react-search.png',
 	},
 	{
 		title: 'React ToDo App',
@@ -33,6 +37,7 @@ export const projects = [
 		source: 'https://github.com/aaron-soto/to-do-app',
 		demo: 'https://aaron-soto.github.io/to-do-app/',
 		description: 'A Clean looking ToSo app to help stay productive.',
+		image: 'react-todo.png',
 	},
 	{
 		title: 'Nintendo Site Clone',
@@ -41,5 +46,6 @@ export const projects = [
 		demo: 'https://aaron-soto.github.io/nintendo-react/',
 		description:
 			'A React clone of a page from the nintendo page with interactions.',
+		image: 'nintendo-clone.jpg',
 	},
 ];
