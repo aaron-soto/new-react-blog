@@ -11,6 +11,7 @@ import { Footer } from 'components/footer/Footer';
 import { NotFound } from 'pages/error/NotFound';
 import { ScrollBar } from 'utils/components/ScrollBar';
 import { BackToTop } from 'utils/components/BackToTop';
+import { Contact } from 'components/contact/Contact';
 
 const TRACKING_ID = 'UA-177845106-2';
 ReactGA.initialize(TRACKING_ID);
@@ -32,6 +33,7 @@ function App() {
 				<Route path='/projects' element={<Projects />} />
 				<Route path='/about' element={<About />} />
 			</Routes>
+			<Contact />
 			<Footer />
 		</div>
 	);

@@ -19,12 +19,10 @@ export const DarkMode = () => {
 
 	return (
 		<div className='toggle-wrapper'>
-			{/* <div className='toggle-label dark'>Dark</div> */}
 			<label className='toggle-switch'>
 				<input type='checkbox' checked={isToggled} onChange={onToggle} />
 				<span className='switch' />
 			</label>
-			{/* <div className='toggle-label light'>Light</div> */}
 		</div>
 	);
 };

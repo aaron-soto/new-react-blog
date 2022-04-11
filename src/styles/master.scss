@@ -33,9 +33,9 @@ body {
 	&-large {
 		max-width: 1350px;
 
-                @include for-phone-only {
-		        padding: 0 1rem;
-	        }
+		@include for-phone-only {
+			padding: 0 1rem;
+		}
 	}
 
 	&.content {
@@ -138,6 +138,16 @@ h2 {
 	@include for-phone-only {
 		h1 {
 			font-size: 2rem;
+		}
+	}
+
+	&.contact {
+		h1 {
+			font-size: 2rem;
+		}
+
+		.description {
+			font-size: 1.1rem;
 		}
 	}
 }
