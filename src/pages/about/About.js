@@ -7,6 +7,7 @@ import { TopTracks } from 'components/spotify/TopTracks';
 import ImgME from 'assets/me.jpg';
 
 import './about.scss';
+import { TextHoverImg } from 'utils/components/text-hover-img/TextHoverImg';
 
 export const About = () => {
 	const gaEventTracker = useAnalyticsEventTracker('About Page');
@@ -135,7 +136,10 @@ export const About = () => {
 				</Link>
 
 				<ul className='simple-list'>
-					<li>I served in the Army as a Sgt for Ranger Regiment.</li>
+					<li>
+						I served in the{' '}
+						<TextHoverImg>Army as a Sgt for Ranger Regiment.</TextHoverImg>
+					</li>
 					<li>I have jumped out of an airplane more times than I can count.</li>
 					<li>I recently started a bodybuilding journey</li>
 					<li>I have visited over 30 different countries</li>

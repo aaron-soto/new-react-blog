@@ -1,0 +1,27 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.hiddenimg {
+	display: none;
+}
+
+.hiddentxt {
+	@include theme-aware('color', 'color-yellow-base');
+	cursor: pointer;
+	font-weight: bold;
+	color: #f00;
+	z-index: 99;
+
+	// a {
+	// 	color: #f00;
+	// 	text-decoration: none;
+	// 	z-index: 99;
+	// }
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	border: 3px solid white;
+}
