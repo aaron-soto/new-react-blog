@@ -350,11 +350,13 @@ h2 {
 	}
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
 	display: none;
 	-webkit-overflow-scrolling: auto !important;
 }
-body {
+body,
+html {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 	-webkit-overflow-scrolling: auto !important;
