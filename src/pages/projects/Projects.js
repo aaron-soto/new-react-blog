@@ -2,11 +2,13 @@ import React from 'react';
 import './project.scss';
 
 import { GiNotebook } from 'react-icons/gi';
-import { Link } from 'react-router-dom';
 
 import { projects } from 'utils/constants/projects';
+import { useAnalyticsEventTracker } from 'utils/analytics/useAnalyticsEventTracker';
 
 export const Projects = () => {
+	const gaEventTracker = useAnalyticsEventTracker('Projects Page');
+
 	return (
 		<>
 			<div className='container'>
@@ -26,8 +28,26 @@ export const Projects = () => {
 								<GiNotebook />
 							</span>
 							<div className='links'>
-								<Link to={project.source}>Source</Link>
-								<Link to={project.demo}>Demo</Link>
+								<span
+									onClick={() => gaEventTracker(`source - ${project.title}`)}
+								>
+									<a
+										href={project.source}
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										Source
+									</a>
+								</span>
+								<span onClick={() => gaEventTracker(`demo - ${project.title}`)}>
+									<a
+										href={project.demo}
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										Demo
+									</a>
+								</span>
 							</div>
 							<p className='description'>{project.description}</p>
 						</div>
