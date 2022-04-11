@@ -1,4 +1,5 @@
 import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from 'components/navbar/Navbar';
@@ -15,6 +16,10 @@ const TRACKING_ID = 'UA-177845106-2';
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	return (
 		<div className='App'>
 			<Navbar />
