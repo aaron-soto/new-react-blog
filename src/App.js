@@ -1,3 +1,5 @@
+import ReactGA from 'react-ga';
+
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from 'components/navbar/Navbar';
 import { About } from 'pages/about/About';
@@ -8,6 +10,9 @@ import { Footer } from 'components/footer/Footer';
 import { NotFound } from 'pages/error/NotFound';
 import { ScrollBar } from 'utils/components/ScrollBar';
 import { BackToTop } from 'utils/components/BackToTop';
+
+const TRACKING_ID = 'UA-177845106-2';
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
 	return (

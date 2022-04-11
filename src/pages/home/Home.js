@@ -4,8 +4,14 @@ import { Link } from 'react-router-dom';
 import './home.scss';
 
 import { projects } from 'utils/constants/projects';
+import { useAnalyticsEventTracker } from 'utils/analytics/useAnalyticsEventTracker';
 
 export const Home = () => {
+	const gaEventTracker = useAnalyticsEventTracker('Home Page');
+	const handleSubscribe = () => {
+		gaEventTracker('subscribe');
+	};
+
 	return (
 		<div className='container'>
 			<h1 className='page-heading'>Hey, I'm Aaron.</h1>
@@ -40,9 +46,9 @@ export const Home = () => {
 					Subscribe to the newsletter to get my latest content by email. Not on
 					any set schedule. Unsubscribe anytime.
 				</p>
-				<Link className='btn-primary' to='/'>
+				<div className='btn-primary' to='/' onClick={handleSubscribe}>
 					Subscribe
-				</Link>
+				</div>
 			</div>
 		</div>
 	);
