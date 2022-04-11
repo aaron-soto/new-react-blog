@@ -7,6 +7,7 @@ import { About } from 'pages/about/About';
 import { Blog } from 'pages/blog/Blog';
 import { Home } from 'pages/home/Home';
 import { Projects } from 'pages/projects/Projects';
+import { Contact as ContactPage } from 'pages/contact/Contact';
 import { Footer } from 'components/footer/Footer';
 import { NotFound } from 'pages/error/NotFound';
 import { ScrollBar } from 'utils/components/ScrollBar';
@@ -32,6 +33,7 @@ function App() {
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/projects' element={<Projects />} />
 				<Route path='/about' element={<About />} />
+				<Route path='/contact' element={<ContactPage />} />
 			</Routes>
 			<Contact />
 			<Footer />
