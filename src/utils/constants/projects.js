@@ -36,7 +36,7 @@ export const projects = [
 		date: 'Feb 2022',
 		source: 'https://github.com/aaron-soto/to-do-app',
 		demo: 'https://aaron-soto.github.io/to-do-app/',
-		description: 'A Clean looking ToSo app to help stay productive.',
+		description: 'A Clean looking ToDo app to help stay productive.',
 		image: 'react-todo.png',
 	},
 	{
