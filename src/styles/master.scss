@@ -32,6 +32,10 @@ body {
 
 	&-large {
 		max-width: 1350px;
+
+                @include for-phone-only {
+		        padding: 0 1rem;
+	        }
 	}
 
 	&.content {
