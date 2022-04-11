@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink as HashLink } from 'react-router-hash-link';
 
 import './home.scss';
 
@@ -21,7 +22,7 @@ export const Home = () => {
 				<Link to='/about'>learn more about me</Link>.
 			</p>
 
-			<Link className='btn-primary' to='/about'>
+			<Link className='btn-primary' to='/contact'>
 				Get Ahold of me
 			</Link>
 

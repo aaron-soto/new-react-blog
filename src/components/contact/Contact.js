@@ -49,7 +49,7 @@ export const Contact = () => {
 	return (
 		<div className='container' id='contact-form'>
 			<div className='page-header contact'>
-				<h1>Contact Me</h1>
+				<h1 id='contact'>Contact Me</h1>
 				<p className='description'>
 					Shoot me a message if you have any questions, music recommendations,
 					or just want to say hi! I like new friends!
