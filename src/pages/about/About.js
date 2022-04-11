@@ -25,7 +25,7 @@ export const About = () => {
 
 			<div className='container content'>
 				<p>
-					Hey, I'm Aaron! I'm a software developer working in remote in Arizona.
+					Hey, I'm Aaron! I'm a software developer working remote in Arizona.
 					Welcome to my spot on the web for projects I've created, tutorials
 					I've written, and anything else I want to show the world or just talk
 					to myself!

@@ -7,12 +7,14 @@ import { Projects } from 'pages/projects/Projects';
 import { Footer } from 'components/footer/Footer';
 import { NotFound } from 'pages/error/NotFound';
 import { ScrollBar } from 'utils/components/ScrollBar';
+import { BackToTop } from 'utils/components/BackToTop';
 
 function App() {
 	return (
 		<div className='App'>
 			<Navbar />
 			<ScrollBar />
+			<BackToTop />
 			<Routes>
 				<Route path='*' element={<NotFound />} />
 				<Route path='/' element={<Home />} />
