@@ -13,6 +13,7 @@ import { NotFound } from 'pages/error/NotFound';
 import { ScrollBar } from 'utils/components/ScrollBar';
 import { BackToTop } from 'utils/components/BackToTop';
 import { Contact } from 'components/contact/Contact';
+import { ComingSoon } from 'pages/error/ComingSoon';
 
 const TRACKING_ID = 'UA-177845106-2';
 ReactGA.initialize(TRACKING_ID);
@@ -34,6 +35,7 @@ function App() {
 				<Route path='/projects' element={<Projects />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/contact' element={<ContactPage />} />
+				<Route path='/coming-soon' element={<ComingSoon />} />
 			</Routes>
 			<Contact />
 			<Footer />

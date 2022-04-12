@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink as HashLink } from 'react-router-hash-link';
 import { Helmet } from 'react-helmet';
+import { blogData } from 'data/blog/blog';
 
 import './home.scss';
 
@@ -39,9 +40,23 @@ export const Home = () => {
 
 			{projects.slice(0, 5).map((project, idx) => {
 				return (
-					<Link className='main-list-item' to='/' key={idx}>
+					<Link className='main-list-item' to='/projects' key={idx}>
 						<span className='item-title'>{project.title}</span>
 						<span className='item-date'>{project.date}</span>
+					</Link>
+				);
+			})}
+
+			<h2 className='main-header'>
+				<span>Blog Posts</span>
+				<Link to='/blog'>View All</Link>
+			</h2>
+
+			{blogData.slice(0, 5).map((post, idx) => {
+				return (
+					<Link className='main-list-item' to='/blog' key={idx}>
+						<span className='item-title'>{post.title}</span>
+						<span className='item-date'>{post.date}</span>
 					</Link>
 				);
 			})}

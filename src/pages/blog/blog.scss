@@ -1,0 +1,49 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.blog-search {
+	@include theme-aware('background-color', 'color-background-secondary');
+	@include theme-aware('color', 'color-grayscale-200');
+	width: 100%;
+	font-size: 1.2rem;
+	padding: 1rem;
+	border: none;
+	outline: none;
+}
+
+.blog-list {
+	li {
+		list-style: none;
+		padding: 1rem 1rem;
+		span {
+			@include theme-aware('color', 'color-grayscale-300');
+		}
+
+		h2 {
+			&:hover {
+				@include theme-aware('color', 'color-grayscale-300');
+			}
+		}
+	}
+}
+
+.search-wrapper {
+	position: relative;
+
+	.icon-wrapper {
+		position: absolute;
+		height: 200%;
+		width: 3rem;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.close-icon {
+		font-size: 2rem;
+	}
+}
