@@ -1,6 +1,7 @@
 import React from 'react';
 import './project.scss';
 
+import { Helmet } from 'react-helmet';
 import { GiNotebook } from 'react-icons/gi';
 
 import { projects } from 'utils/constants/projects';
@@ -11,6 +12,10 @@ export const Projects = () => {
 
 	return (
 		<>
+			<Helmet>
+				<meta charSet='utf-8' />
+				<title>Aaron Soto | Projects</title>
+			</Helmet>
 			<div className='container'>
 				<div className='page-header'>
 					<h1>Projects</h1>

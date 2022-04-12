@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink as HashLink } from 'react-router-hash-link';
+import { Helmet } from 'react-helmet';
 
 import './home.scss';
 
@@ -15,6 +16,11 @@ export const Home = () => {
 
 	return (
 		<div className='container'>
+			<Helmet>
+				<meta charSet='utf-8' />
+				<title>Aaron Soto | Home</title>
+			</Helmet>
+
 			<h1 className='page-heading'>Hey, I'm Aaron.</h1>
 			<p>
 				I'm a Full Stack web developer with a passion in React. I love to build

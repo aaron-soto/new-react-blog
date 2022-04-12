@@ -1,7 +1,7 @@
 import { HashLink as Link } from 'react-router-hash-link';
 
 import { RiLinksLine } from 'react-icons/ri';
-
+import { Helmet } from 'react-helmet';
 import { useAnalyticsEventTracker } from 'utils/analytics/useAnalyticsEventTracker';
 import { TopTracks } from 'components/spotify/TopTracks';
 import ImgME from 'assets/me.jpg';
@@ -16,6 +16,10 @@ export const About = () => {
 	};
 	return (
 		<>
+			<Helmet>
+				<meta charSet='utf-8' />
+				<title>Aaron Soto | About</title>
+			</Helmet>
 			<div className='container'>
 				<div className='page-header'>
 					<h1>About Me</h1>
