@@ -14,6 +14,7 @@ import { ScrollBar } from 'utils/components/ScrollBar';
 import { BackToTop } from 'utils/components/BackToTop';
 import { Contact } from 'components/contact/Contact';
 import { ComingSoon } from 'pages/error/ComingSoon';
+import { ScrollAfterClick } from 'utils/components/ScrollAfterClick';
 
 const TRACKING_ID = 'UA-177845106-2';
 ReactGA.initialize(TRACKING_ID);
@@ -25,6 +26,7 @@ function App() {
 
 	return (
 		<div className='App'>
+			<ScrollAfterClick />
 			<Navbar />
 			<ScrollBar />
 			<BackToTop />
