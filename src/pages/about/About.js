@@ -87,7 +87,6 @@ export const About = () => {
 			</div>
 			<div className='container'>
 				<Link className='header-link' to='/about#my-resume'>
-					<RiLinksLine className='icon' />
 					<h2 id='my-resume'>My Tools</h2>
 				</Link>
 
