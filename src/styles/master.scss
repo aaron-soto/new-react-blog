@@ -453,6 +453,7 @@ html {
 
 		@include for-phone-only {
 			filter: grayscale(0);
+			width: 25%;
 		}
 	}
 }
