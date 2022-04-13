@@ -458,3 +458,12 @@ html {
 		}
 	}
 }
+
+::selection {
+	@include theme-aware('background-color', 'color-purple-base');
+	@include theme-aware('color', 'color-background-primary');
+}
+::-moz-selection {
+	@include theme-aware('background-color', 'color-purple-base');
+	@include theme-aware('color', 'color-background-primary');
+}
