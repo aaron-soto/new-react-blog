@@ -1,8 +1,6 @@
-import meArmy from '../../../assets/images/me-army.jpg';
-
 import './TextHoverImg.scss';
 
-export const TextHoverImg = ({ children }) => {
+export const TextHoverImg = ({ img, children }) => {
 	return (
 		<span>
 			<span class='hiddentxt'>
@@ -11,7 +9,7 @@ export const TextHoverImg = ({ children }) => {
 				{/* </a> */}
 			</span>
 			<span class='hiddenimg'>
-				<img src={meArmy} width='250' />
+				<img src={img} width='250' />
 			</span>
 		</span>
 	);

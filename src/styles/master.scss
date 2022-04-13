@@ -94,6 +94,12 @@ h2 {
 		@include theme-aware('color', 'color-background');
 		@include theme-aware('background-color', 'color-purple-40');
 	}
+
+	&.resume-download {
+		a {
+			color: $color-white !important;
+		}
+	}
 }
 
 .main-header {

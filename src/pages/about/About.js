@@ -6,11 +6,17 @@ import { useAnalyticsEventTracker } from 'utils/analytics/useAnalyticsEventTrack
 import { TopTracks } from 'components/spotify/TopTracks';
 import ImgME from 'assets/me.jpg';
 
+import { AiFillHtml5 } from 'react-icons/ai';
+import { FaCss3Alt } from 'react-icons/fa';
+
+import meArmy from 'assets/images/me-army.jpg';
+
 import './about.scss';
 import { TextHoverImg } from 'utils/components/text-hover-img/TextHoverImg';
 
 export const About = () => {
 	const gaEventTracker = useAnalyticsEventTracker('About Page');
+
 	const handleResumeDownload = () => {
 		gaEventTracker('resume-download');
 	};
@@ -63,6 +69,17 @@ export const About = () => {
 					.
 				</p>
 			</div>
+			{/* <div className='container'>
+				<Link className='header-link' to='/about#my-resume'>
+					<RiLinksLine className='icon' />
+					<h2 id='my-resume'>My Skills</h2>
+				</Link>
+
+				<div className='row skill-icons'>
+					<AiFillHtml5 />
+					<FaCss3Alt />
+				</div>
+			</div> */}
 
 			<div className='container'>
 				<Link className='header-link' to='/about#spotify-top'>
@@ -142,7 +159,9 @@ export const About = () => {
 				<ul className='simple-list'>
 					<li>
 						I served in the{' '}
-						<TextHoverImg>Army as a Sgt for Ranger Regiment.</TextHoverImg>
+						<TextHoverImg img={meArmy}>
+							Army as a Sgt for Ranger Regiment.
+						</TextHoverImg>
 					</li>
 					<li>I have jumped out of an airplane more times than I can count.</li>
 					<li>I recently started a bodybuilding journey</li>

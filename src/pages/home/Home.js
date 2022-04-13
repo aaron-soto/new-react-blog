@@ -15,6 +15,10 @@ export const Home = () => {
 		gaEventTracker('subscribe');
 	};
 
+	const handleResumeDownload = () => {
+		gaEventTracker('resume-download');
+	};
+
 	return (
 		<div className='container'>
 			<Helmet>
@@ -29,9 +33,14 @@ export const Home = () => {
 				<Link to='/about'>learn more about me</Link>.
 			</p>
 
-			<Link className='btn-primary' to='/contact'>
-				Get Ahold of me
-			</Link>
+			<span
+				onClick={handleResumeDownload}
+				className='btn-primary resume-download'
+			>
+				<a href='https://docs.google.com/document/d/1V5IDPwpYZEsDaibjKotqvt-TdKVZSIuCjFCJJLvIoBo/edit?usp=sharing'>
+					Download Resume
+				</a>
+			</span>
 
 			<h2 className='main-header'>
 				<span>Projects</span>
