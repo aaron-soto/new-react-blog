@@ -88,7 +88,7 @@ export const Contact = () => {
 								value={message}
 								onChange={(e) => setMessage(e.target.value)}
 							></textarea>
-							<button className='contact-input' onClick={submit}>
+							<button className='contact-btn' onClick={submit}>
 								Send Message
 							</button>
 						</div>

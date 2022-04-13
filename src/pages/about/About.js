@@ -155,6 +155,25 @@ export const About = () => {
 
 			<div className='container'>
 				<Link className='header-link' to='/about#spotify-top'>
+					<h2 id='spotify-top'>My Gear</h2>
+				</Link>
+
+				<p>This is some of the gear/ equipment that I use regularly</p>
+				<ul className='simple-list'>
+					<li>UpLift 84" Sit Stand Desk</li>
+					<li>Herman Miller Logitech Embody Chair</li>
+					<li>2x 32" 4k Samsung Monitors</li>
+					<li>Astro A40 Headset</li>
+					<li>Logitech c920</li>
+					<li>Logitech G502 Mouse</li>
+					<li>Logitech G513 Keyboard</li>
+					<li>iPad Pro</li>
+					<li>Canon M50 mark II</li>
+				</ul>
+			</div>
+
+			<div className='container'>
+				<Link className='header-link' to='/about#spotify-top'>
 					<h2 id='spotify-top'>My Top Spotify Songs</h2>
 				</Link>
 
