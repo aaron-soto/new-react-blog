@@ -8,6 +8,7 @@ import './home.scss';
 
 import { projects } from 'utils/constants/projects';
 import { useAnalyticsEventTracker } from 'utils/analytics/useAnalyticsEventTracker';
+import { SquareClicker } from 'components/interactive/square-clicker/SquareClicker';
 
 export const Home = () => {
 	const gaEventTracker = useAnalyticsEventTracker('Home Page');
@@ -25,6 +26,8 @@ export const Home = () => {
 				<meta charSet='utf-8' />
 				<title>Aaron Soto | Home</title>
 			</Helmet>
+
+			{/* <SquareClicker /> */}
 
 			<h1 className='page-heading'>Hey, I'm Aaron.</h1>
 			<p>

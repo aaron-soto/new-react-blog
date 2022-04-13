@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './toggle-switch.scss';
 
 export const DarkMode = () => {
-	const [isToggled, setIsToggled] = useState(false);
+	const [isToggled, setIsToggled] = useState(true);
 	const onToggle = () => setIsToggled(!isToggled);
 
 	useEffect(() => {
