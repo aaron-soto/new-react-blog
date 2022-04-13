@@ -6,13 +6,30 @@ import { useAnalyticsEventTracker } from 'utils/analytics/useAnalyticsEventTrack
 import { TopTracks } from 'components/spotify/TopTracks';
 import ImgME from 'assets/me.jpg';
 
-import { AiFillHtml5 } from 'react-icons/ai';
-import { FaCss3Alt } from 'react-icons/fa';
-
 import meArmy from 'assets/images/me-army.jpg';
 
 import './about.scss';
 import { TextHoverImg } from 'utils/components/text-hover-img/TextHoverImg';
+import { HtmlIcon } from 'assets/icons/HtmlIcon';
+import { CssIcon } from 'assets/icons/CssIcon';
+import { JavascriptIcon } from 'assets/icons/JavascriptIcon';
+import { ScssIcon } from 'assets/icons/ScssIcon';
+import { ReactIcon } from 'assets/icons/ReactIcon';
+import { NodeIcon } from 'assets/icons/NodeIcon';
+import { FigmaIcon } from 'assets/icons/FigmaIcon';
+import { VsCodeIcon } from 'assets/icons/VsCodeIcon';
+import { GitIcon } from 'assets/icons/GitIcon';
+import { GithubIcon } from 'assets/icons/GithubIcon';
+import { AdobeIcon } from 'assets/icons/AdobeIcon';
+import { OfficeIcon } from 'assets/icons/OfficeIcon';
+import { PostmanIcon } from 'assets/icons/PostmanIcon';
+import { CodepenIcon } from 'assets/icons/CodepenIcon';
+import { FirebaseIcon } from 'assets/icons/FirebaseIcon';
+import { DockerIcon } from 'assets/icons/DockerIcon';
+import { MaterialIcon } from 'assets/icons/MaterialIcon';
+import { PrettierIcon } from 'assets/icons/PrettierIcon';
+import { DesignerIcon } from 'assets/icons/DesignerIcon';
+import { SvgIcon } from 'utils/components/SvgIcon';
 
 export const About = () => {
 	const gaEventTracker = useAnalyticsEventTracker('About Page');
@@ -68,17 +85,74 @@ export const About = () => {
 					.
 				</p>
 			</div>
-			{/* <div className='container'>
+			<div className='container'>
 				<Link className='header-link' to='/about#my-resume'>
 					<RiLinksLine className='icon' />
-					<h2 id='my-resume'>My Skills</h2>
+					<h2 id='my-resume'>My Tools</h2>
 				</Link>
 
-				<div className='row skill-icons'>
-					<AiFillHtml5 />
-					<FaCss3Alt />
+				<p>These are some of the tools that I use everyday.</p>
+
+				<div className='row skills-icons'>
+					<SvgIcon>
+						<HtmlIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<CssIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<JavascriptIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<ScssIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<ReactIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<NodeIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<FigmaIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<VsCodeIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<GitIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<GithubIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<AdobeIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<OfficeIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<PostmanIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<CodepenIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<FirebaseIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<DockerIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<MaterialIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<PrettierIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<DesignerIcon />
+					</SvgIcon>
 				</div>
-			</div> */}
+			</div>
 
 			<div className='container'>
 				<Link className='header-link' to='/about#spotify-top'>

@@ -20,11 +20,9 @@ export const TopTracks = () => {
 			<p className='marquee row now-playing'>
 				<GrSpotify className='spotify-icon' />
 				<span>
-					{nowPlaying != null ? (
-						`Now Playing | ${nowPlaying.title} - ${nowPlaying.artist}`
-					) : (
-						<p>Not Playing</p>
-					)}
+					{nowPlaying != null
+						? `Now Playing | ${nowPlaying.title} - ${nowPlaying.artist}`
+						: 'Not Playing'}
 				</span>
 			</p>
 

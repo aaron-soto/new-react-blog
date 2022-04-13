@@ -438,3 +438,21 @@ html {
 		@include theme-aware('color', 'color-purple-60');
 	}
 }
+
+.skills-icons {
+	display: flex;
+	flex-wrap: wrap;
+	.skill-icon {
+		width: 100px;
+		filter: grayscale(100%);
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			filter: grayscale(0);
+		}
+
+		@include for-phone-only {
+			filter: grayscale(0);
+		}
+	}
+}
