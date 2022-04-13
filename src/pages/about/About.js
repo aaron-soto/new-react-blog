@@ -76,10 +76,10 @@ export const About = () => {
 				</Link>
 
 				<p>
-					Checkout my resume{' '}
+					Checkout my{' '}
 					<span onClick={handleResumeDownload}>
 						<a href='https://docs.google.com/document/d/1V5IDPwpYZEsDaibjKotqvt-TdKVZSIuCjFCJJLvIoBo/edit?usp=sharing'>
-							here
+							resume here
 						</a>
 					</span>
 					.
