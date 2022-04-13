@@ -55,7 +55,6 @@ export const About = () => {
 
 			<div className='container'>
 				<Link className='header-link' to='/about#my-resume'>
-					<RiLinksLine className='icon' />
 					<h2 id='my-resume'>My Resume</h2>
 				</Link>
 
@@ -83,7 +82,6 @@ export const About = () => {
 
 			<div className='container'>
 				<Link className='header-link' to='/about#spotify-top'>
-					<RiLinksLine className='icon' />
 					<h2 id='spotify-top'>My Top Spotify Songs</h2>
 				</Link>
 
@@ -103,7 +101,6 @@ export const About = () => {
 
 			<div className='container'>
 				<Link className='header-link' to='/about#what-im-doing'>
-					<RiLinksLine className='icon' />
 					<h2 id='what-im-doing'>What I'm doing right now</h2>
 				</Link>
 				<ul className='simple-list'>
@@ -117,7 +114,6 @@ export const About = () => {
 
 			<div className='container'>
 				<Link className='header-link' to='/about#connect'>
-					<RiLinksLine className='icon' />
 					<h2 id='connect'>Connect</h2>
 				</Link>
 				<p>
@@ -152,7 +148,6 @@ export const About = () => {
 
 			<div className='container'>
 				<Link className='header-link' to='/about#random-facts'>
-					<RiLinksLine className='icon' />
 					<h2 id='random-facts'>Random Facts</h2>
 				</Link>
 

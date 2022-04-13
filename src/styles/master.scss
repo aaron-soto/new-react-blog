@@ -213,32 +213,15 @@ h2 {
 
 .header-link {
 	display: block;
-	position: relative;
 	// height: 2rem;
-	min-height: 2rem;
+	// min-height: 2rem;
 
 	h2 {
 		@include bounce-transition(0.3);
-		position: absolute;
-		left: 0;
-		top: 50%;
 		padding: 0;
-		line-height: 2rem;
 		@include theme-aware('color', 'color-purple-base');
 		font-size: 2rem;
 		font-weight: 500;
-	}
-
-	.icon {
-		@include bounce-transition(0.3);
-		position: absolute;
-		left: 0;
-		top: 50%;
-		font-size: 24px;
-		opacity: 0;
-		padding: 0;
-		line-height: 2rem;
-		color: $gray;
 	}
 
 	&:hover {
@@ -272,7 +255,7 @@ h2 {
 
 .header-link ~ p,
 .header-link ~ .simple-list {
-	margin-top: 1.8rem;
+	margin-top: 1rem;
 }
 .main-header ~ p,
 .main-header ~ .row {
