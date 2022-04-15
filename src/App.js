@@ -15,6 +15,7 @@ import { BackToTop } from 'utils/components/BackToTop';
 import { Contact } from 'components/contact/Contact';
 import { ComingSoon } from 'pages/error/ComingSoon';
 import { ScrollAfterClick } from 'utils/components/ScrollAfterClick';
+import { Weather } from 'pages/weather/Weather';
 
 const TRACKING_ID = 'UA-177845106-2';
 ReactGA.initialize(TRACKING_ID);
@@ -37,6 +38,7 @@ function App() {
 				<Route path='/projects' element={<Projects />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/contact' element={<ContactPage />} />
+				<Route path='/weather' element={<Weather />} />
 				<Route path='/coming-soon' element={<ComingSoon />} />
 			</Routes>
 			<Contact />
