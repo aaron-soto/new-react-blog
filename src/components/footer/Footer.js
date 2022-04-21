@@ -30,7 +30,7 @@ export const Footer = () => {
 						<Link to='/blog'>Blog</Link>
 					</li>
 					<li onClick={scrollToTop}>
-						<Link to='/projects'>Projects</Link>
+						<Link to='/experiments'>Experiments</Link>
 					</li>
 					<li onClick={scrollToTop}>
 						<Link to='/about'>About</Link>
