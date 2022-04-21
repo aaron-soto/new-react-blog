@@ -46,16 +46,21 @@ export const Home = () => {
 			</span>
 
 			<h2 className='main-header'>
-				<span>Projects</span>
-				<Link to='/projects'>View All</Link>
+				<span>Experiments</span>
+				<Link to='/experiments'>View All</Link>
 			</h2>
 
 			{projects.slice(0, 5).map((project, idx) => {
 				return (
-					<Link className='main-list-item' to='/projects' key={idx}>
+					<a
+						className='main-list-item'
+						href={project.demo}
+						target='_blank'
+						key={idx}
+					>
 						<span className='item-title'>{project.title}</span>
 						<span className='item-date'>{project.date}</span>
-					</Link>
+					</a>
 				);
 			})}
 

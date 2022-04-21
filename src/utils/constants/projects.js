@@ -1,5 +1,29 @@
 export const projects = [
 	{
+		title: 'React API Weather Dashboard',
+		date: 'Apr 2022',
+		source: 'https://github.com/aaron-soto/react-weather',
+		demo: 'https://aaron-soto.github.io/react-weather/',
+		description: 'A weather dashboard to show current temps of a given city.',
+		image: 'react-weather.png',
+	},
+	{
+		title: 'React Pricing Component',
+		date: 'Jun 2021',
+		source: 'https://github.com/aaron-soto/pricing-component',
+		demo: 'https://aaron-soto.github.io/pricing-component/',
+		description: 'Front end mentor solution to a challenge.',
+		image: 'pricing-component.png',
+	},
+	{
+		title: 'Canvas Interactive Rectangles',
+		date: 'Apr 2022',
+		source: 'https://github.com/aaron-soto/interactive-rectangles',
+		demo: 'https://aaron-soto.github.io/interactive-rectangles/',
+		description: 'JS Canvas mouse interactive rectangles.',
+		image: 'interactive-rectangles.png',
+	},
+	{
 		title: 'React Flip Clock Time Tracker',
 		date: 'Apr 2022',
 		source: 'https://github.com/aaron-soto/react-clock',

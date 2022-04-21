@@ -18,7 +18,7 @@ export const Projects = () => {
 			</Helmet>
 			<div className='container'>
 				<div className='page-header'>
-					<h1>Projects</h1>
+					<h1>Experiments</h1>
 					<p className='description'>
 						A few highlights of my open-source projects.
 					</p>
